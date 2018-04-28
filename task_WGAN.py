@@ -139,8 +139,8 @@ if __name__ == '__main__':
     weightSaver = tf.train.Saver(var_list=weights)
     biaseSaver = tf.train.Saver(var_list=biases)
 
-    weightSaver.restore(sess, "./saved_model/DCGAN_weights.ckpt")
-    biaseSaver.restore(sess, "./saved_model/DCGAN_biases.ckpt")
+    #weightSaver.restore(sess, "./saved_model/DCGAN_weights.ckpt")
+    #biaseSaver.restore(sess, "./saved_model/DCGAN_biases.ckpt")
 
     total_batch = int(orig_img.shape[0]/batch_size)
     # Training cycle
